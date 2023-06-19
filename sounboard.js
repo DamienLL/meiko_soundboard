@@ -15,7 +15,7 @@ window.addEventListener("load", () => {
     // Ajouter un événement click pour jouer le son lorsque le bouton est cliqué
     button.addEventListener("click", () => {
       const audio = new Audio(`sounds/${sound.file}`); // Creer un audio
-      audio.play();
+      audio.play(); // Jouer le son
     });
 
     // Ajouter le bouton à la page Twitch
