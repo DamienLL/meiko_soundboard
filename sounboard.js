@@ -10,6 +10,7 @@ window.addEventListener("load", () => {
   sounds.forEach((sound) => {
     // Pour chaque son
     const button = document.createElement("button"); // Creer un bouton
+    button.classList.add("sound_button") //on ajoute une class au bouton
     button.innerText = sound.name; // Ajouter le nom du bouton
 
     // Ajouter un événement click pour jouer le son lorsque le bouton est cliqué
@@ -19,6 +20,8 @@ window.addEventListener("load", () => {
     });
 
     // Ajouter le bouton à la page Twitch
-    document.body.appendChild(button); // Ajouter le bouton
+    const soundbox = document.querySelector(".soundbox_buttons");
+    soundbox.appendChild(button); // Ajouter le bouton
   });
 });
+
