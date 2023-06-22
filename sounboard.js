@@ -20,7 +20,6 @@ window.addEventListener("load", () => {
     icon.classList.add("button_icon")// On ajoute une class à l'image
     icon.src = `./static/images/${sound.img}`; // Source dynamique de l'icone
     icon.alt = `L'icone du son '${sound.name}'>` // Alt dynamique de l'icone
-    // button.innerHTML = `<img class="button_icon" src="./static/images/${sound.img}">`; // Ajouter l'icone du bouton
     button.appendChild(icon); // On rattache l'icone au bouton
 
     // Ajouter un événement click pour jouer le son lorsque le bouton est cliqué
