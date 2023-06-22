@@ -7,3 +7,5 @@ TODO
 - Voir la page de développement Twitch pour voir la validation et les tests d'app
 
 - voir pour la valisdation et mise en ligne
+
+

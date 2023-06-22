@@ -5,6 +5,9 @@ window.addEventListener("load", () => {
     { name: "Sound 1", file: "sound1.mp3" },
     { name: "Sound 2", file: "sound2.mp3" },
     { name: "Sound 3", file: "sound3.mp3" },
+    { name: "Sound 4", file: "sound4.mp3" },
+    { name: "Sound 5", file: "sound5.mp3" },
+    { name: "Sound 6", file: "sound6.mp3" },
   ];
 
   sounds.forEach((sound) => {
@@ -20,7 +23,7 @@ window.addEventListener("load", () => {
     });
 
     // Ajouter le bouton à la page Twitch
-    const soundbox = document.querySelector(".soundbox_buttons");
+    const soundbox = document.querySelector(".soundbox_buttons_content");
     soundbox.appendChild(button); // Ajouter le bouton
   });
 });
