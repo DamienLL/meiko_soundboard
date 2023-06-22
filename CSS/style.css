@@ -1,3 +1,17 @@
+/* Couleurs */
+
+:root {
+    --bg-black: #000;
+    --bg-darkpurple_light: #350c78af;
+    --bg-darkblue_light: #211edf60;
+    --bg-white: #ffffff;
+    --bg-cream_light: #e3dfe8;
+    --bg-purple_gradient: #8832FC;
+    --bg-blue_gradient: #6168FF;
+    --bg-light_blue: #3997F7;
+}
+/* global content */
+
 .soundbox_content {
     display: flex;
     flex-direction: column;
@@ -9,28 +23,38 @@
     border-radius: 20px;
 }
 
+/* header content */
+
 .soundbox_header_content {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    background-color: #211edf60;
+    background-color: var(--bg-darkblue_light);
     height: 4rem;
     border-radius: 18px 18px 0 0;
 }
+
+/* images du header (de part et d'autres du titre) */
+
 .header_img {
     width: 60px;
     height: 60px;
     margin: auto;
 
 }
+
+/* titre de la soundbox */
+
 .header_title {
     font-size: 160%;
     text-align: center;
-    color: #e3dfe8;
+    color: var(--bg-cream_light);
     margin: 0 auto;
     font-family: 'Anton', sans-serif;
 }
+
+/* conteneur des boutons (div) */
 
 .soundbox_buttons_content {
     display: flex;
@@ -39,22 +63,27 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
-    /* width: 100%; */
+
     height: 100%;
     padding: 10px;
-    background-color: black;
+    background-color: var(--bg-black);
     border-radius: 0 0 20px 20px;
 }
+
+/* boutons */
+
 .sound_button {
     width: 120px;
     height: 120px;
     border-radius: 15px;
     font-size: 20px;
     font-family: 'Anton', sans-serif;
-    background: linear-gradient(to bottom right, #8832FC, #6168FF);
+    background: linear-gradient(to bottom right, var(--bg-purple_gradient), var(--bg-blue_gradient));
+    /* border: 2px solid var(--bg-darkpurple_light); */
 }
 
 .sound_button:hover {
-    color: #3997F7;
+    color: var(--bg-light_blue);
     cursor: pointer;
+    border: 1px solid linear-gradient(to bottom right, #8832FC, #6168FF);
 }
