@@ -4,7 +4,7 @@ window.addEventListener("load", () => {
   // Créer un bouton pour chaque son de la Soundboard
   const sounds = [
 
-    { name: "Sound 1", file: "sound1.mp3", img: "sound_icon_01.png" },
+    { name: "Poire", file: "poire.mp3", img: "sound_icon_01.png" },
     { name: "Sound 2", file: "sound2.mp3", img: "sound_icon_02.png" },
     { name: "Sound 3", file: "sound3.mp3", img: "sound_icon_03.png" },
     { name: "Sound 4", file: "sound4.mp3", img: "sound_icon_04.png" },
